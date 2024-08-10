@@ -1,9 +1,11 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useEffect } from "react";
 import transactionReducer from "../reducer/transaction";
+
+const SESSION_STORAGE_KEY = "transactions";
 
 // Initial state
 const initialState = {
-  transactions: [],
+  transactions: JSON.parse(sessionStorage.getItem(SESSION_STORAGE_KEY)) || [],
 };
 
 // Create context
@@ -27,6 +29,14 @@ export const TransactionProvider = ({ children }) => {
       payload: transaction,
     });
   }
+
+  // Update sessionStorage whenever transactions change
+  useEffect(() => {
+    sessionStorage.setItem(
+      SESSION_STORAGE_KEY,
+      JSON.stringify(state.transactions)
+    );
+  }, [state.transactions]);
 
   return (
     <TransactionContext.Provider
