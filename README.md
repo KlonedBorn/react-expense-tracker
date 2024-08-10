@@ -1,8 +1,48 @@
-# React + Vite
+# React Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple expense tracker built with React and Vite. It allows users to track their income and expenses, providing a quick overview of their financial status.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Getting Started](#getting-started)
+- [Installation](#installation)
+- [Running the App](#running-the-app)
+- [Build](#build)
+- [Deploy](#deploy)
+- [License](#license)
+
+## Getting Started
+
+These instructions will help you set up and run the project on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Ensure you have the following installed on your local machine:
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/KlonedBorn/react-expense-tracker.git
+   ```
+
+2. **Navigate to the project directory:**
+   ```bash
+   cd react-expense-tracker
+   ```
+3. **Install dependencies:**
+   ```bash
+   cd npm install
+   ```
+
+## Running the App
+
+To start the development server and run the app locally, use the following command:
+
+```bash
+npm run dev
+```
