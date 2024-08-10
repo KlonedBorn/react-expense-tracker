@@ -9,7 +9,7 @@ import TransactionListGroup from "./component/Transaction/TransactionListGroup";
 function App() {
   return (
     <Container>
-      <Stack style={{ width: "min(100vh,100%)" }} className="gap-3">
+      <Stack style={{ width: "min(100vh,100%)" }} className="gap-1">
         <TransactionProvider>
           <Header />
           <Balance />
